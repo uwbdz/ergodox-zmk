@@ -13,10 +13,18 @@
 
 &lt {
 	flavor = "tap-preferred";
-	tapping_term_ms = <200>;
+	tapping_term_ms = <150>;
 };
 
 / {
+	combo {
+		compatible = "zmk,combos";
+		combo_A {
+			timeout-ms = <50>;
+			key-positions = <29 39>;
+			bindings = <&kp LS(A)>;
+		};
+	};
 	keymap {
 		compatible = "zmk,keymap";
 		layer_0 {
