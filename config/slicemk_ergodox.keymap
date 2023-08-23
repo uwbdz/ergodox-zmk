@@ -148,7 +148,7 @@
 			timeout-ms = <50>;
 			key-positions = <39 50>;
 			bindings = <&kp LS(M)>;
-		}
+		};
 		combo_DelWord {
 			timeout-ms = <50>;
 			key-positions = <34 70>;
