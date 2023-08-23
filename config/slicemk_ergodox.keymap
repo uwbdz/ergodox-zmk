@@ -19,6 +19,30 @@
 / {
 	combo {
 		compatible = "zmk,combos";
+
+		combo_Q {
+			timeout-ms = <50>;
+			key-positions = <16 39>;
+			bindings = <&kp LS(Q)>;
+		};
+
+		combo_W {
+			timeout-ms = <50>;
+			key-positions = <17 39>;
+			bindings = <&kp LS(W)>;
+		};
+
+		combo_E {
+			timeout-ms = <50>;
+			key-positions = <18 39>;
+			bindings = <&kp LS(E)>;
+		};
+
+		combo_R {
+			timeout-ms = <50>;
+			key-positions = <19 39>;
+			bindings = <&kp LS(R)>;
+		};
 		combo_T {
 			timeout-ms = <50>;
 			key-positions = <20 39>;
