@@ -12,7 +12,8 @@
 #define LAYER_NUMBERS 5
 
 &lt {
-	tapping_term_ms = <100>;
+	flavor = "tap-preferred";
+	tapping_term_ms = <200>;
 };
 
 / {
