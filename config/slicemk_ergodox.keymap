@@ -24,6 +24,8 @@
 		ZMK_MACRO(macro_left_brace, wait-ms = <0>; tap-ms = <0>; bindings = <&macro_tap &kp LEFT_BRACE>;)
 		ZMK_MACRO(macro_right_bracket, wait-ms = <0>; tap-ms = <0>; bindings = <&macro_tap &kp RIGHT_BRACKET>;)
 		ZMK_MACRO(macro_left_bracket, wait-ms = <0>; tap-ms = <0>; bindings = <&macro_tap &kp LEFT_BRACKET>;)
+		ZMK_MACRO(macro_to_mac, wait-ms = <0>; tap-ms = <0>; bindings = <&to LAYER_MAC &rgb_ug RGB_COLOR_HSB(128,100,100) &rgb_ug RGB_TOG>;)
+		ZMK_MACRO(macro_to_linux, wait-ms = <0>; tap-ms = <0>; bindings = <&to LAYER_MAIN &rgb_ug RGB_TOG>;)
 	};
 	behaviors {
 		as: auto_shift {
@@ -288,7 +290,7 @@
 				&kp LEFT_CONTROL &kp A            &kp S            &kp D                &kp F                 &kp G                                                       &kp H                 &kp J                   &kp K                &kp L             &kp SEMICOLON      &kp APOSTROPHE
 				&kp LEFT_SHIFT   &kp Z            &kp X            &kp C                &kp V                 &kp B                       &kp LC(TAB)   &kp LG(TAB)       &kp N                 &kp M                   &kp CMMA             &kp DOT           &kp FSLH           &kp RIGHT_SHIFT
 				&kp LEFT_META    &kp LEFT_CONTROL &kp LALT         &kp C_AC_BACK        &kp C_AC_FORWARD                                                                                        &out OUT_USB            &out OUT_BLE         &kp RALT          &kp RIGHT_CONTROL  &kp RIGHT_META
-				                                                                                              &none                       &to LAYER_MAC &kp C_VOLUME_UP   &none
+				                                                                                              &none                       &macro_to_mac  &kp C_VOLUME_UP   &none
 				                                                                        &kp SPACE             &lt LAYER_SYMBOLS BACKSPACE &none         &kp C_VOLUME_DOWN &lt LAYER_MOVE ESCAPE &lt LAYER_NUMBERS ENTER
 				                                                                                                                          &none         &kp C_MUTE
 			>;
@@ -301,7 +303,7 @@
 				&trans &trans        &trans &trans       &trans        &trans                              &trans                   &trans &trans &trans                &trans             &trans
 				&trans &trans        &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans             &trans
 				&trans &kp LEFT_META &trans &kp LG(LEFT) &kp LG(RIGHT)                                                              &trans &trans &trans                &kp RIGHT_META     &trans
-				                                                       &trans &to LAYER_MAIN &trans        &trans
+				                                                       &trans &macro_to_linux &trans       &trans
 				                                         &trans        &trans &trans         &trans        &lt LAYER_MACMOVE ESCAPE &trans
 				                                                              &trans         &trans
 			>;
