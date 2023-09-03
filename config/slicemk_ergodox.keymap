@@ -24,8 +24,8 @@
 		ZMK_MACRO(macro_left_brace, wait-ms = <0>; tap-ms = <0>; bindings = <&macro_tap &kp LEFT_BRACE>;)
 		ZMK_MACRO(macro_right_bracket, wait-ms = <0>; tap-ms = <0>; bindings = <&macro_tap &kp RIGHT_BRACKET>;)
 		ZMK_MACRO(macro_left_bracket, wait-ms = <0>; tap-ms = <0>; bindings = <&macro_tap &kp LEFT_BRACKET>;)
-		ZMK_MACRO(macro_to_mac, wait-ms = <0>; tap-ms = <0>; bindings = <&to LAYER_MAC &rgb_ug RGB_COLOR_HSB(128,100,100) &rgb_ug RGB_TOG>;)
-		ZMK_MACRO(macro_to_linux, wait-ms = <0>; tap-ms = <0>; bindings = <&to LAYER_MAIN &rgb_ug RGB_TOG>;)
+		ZMK_MACRO(macro_to_mac, wait-ms = <0>; tap-ms = <5>; bindings = <&to LAYER_MAC &rgb_ug RGB_COLOR_HSB(128,100,100) &rgb_ug RGB_TOG &bl BL_TOG>;)
+		ZMK_MACRO(macro_to_linux, wait-ms = <0>; tap-ms = <5>; bindings = <&to LAYER_MAIN &rgb_ug RGB_TOG &bl BL_TOG>;)
 	};
 	behaviors {
 		as: auto_shift {
