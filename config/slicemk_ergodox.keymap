@@ -20,8 +20,8 @@
 
 / {
 	macros {
-		ZMK_MACRO(macro_right_brace, wait-ms = <10>; tap-ms = <10>; bindings = <&macro_tap &kp RIGHT_BRACE>;)
-		ZMK_MACRO(macro_left_brace, wait-ms = <10>; tap-ms = <10>; bindings = <&macro_tap &kp LEFT_BRACE>;)
+		ZMK_MACRO(macro_right_brace, wait-ms = <40>; tap-ms = <40>; bindings = <&macro_tap &kp RIGHT_BRACE>;)
+		ZMK_MACRO(macro_left_brace, wait-ms = <40>; tap-ms = <40>; bindings = <&macro_tap &kp LEFT_BRACE>;)
 	};
 	behaviors {
 		as: auto_shift {
