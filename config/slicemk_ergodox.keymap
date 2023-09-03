@@ -20,12 +20,12 @@
 
 / {
 	macros {
-		ZMK_MACRO(open_brace,
+		ZMK_MACRO(macos_left_brace,
 			wait-ms = <40>;
 			tap-ms = <40>;
 			bindings
 				= <&macro_press   &kp LALT>
-				, <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3>
+				, <&macro_tap     &kp KP_N0 &kp KP_N0 &kp KP_N7 &kp B>
     				, <&macro_release &kp LALT>
     				;)
 	};
