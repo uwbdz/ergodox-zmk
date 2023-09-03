@@ -294,7 +294,7 @@
 		layer_1 {
 			bindings = <
 				&bootloader
-				&trans &trans        &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &macos_left_brace     &macos_right_brace &trans
+				&trans &trans        &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans             &trans
 				&trans &trans        &trans &trans       &trans        &trans &trans         &kp LG(GRAVE) &trans                   &trans &trans &trans                &trans             &trans
 				&trans &trans        &trans &trans       &trans        &trans                              &trans                   &trans &trans &trans                &trans             &trans
 				&trans &trans        &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans             &trans
