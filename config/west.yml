@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: slicemk
-      url-base: https://github.com/slicemk
+      url-base: https://github.com/keyboard-config
   projects:
     - name: zmk
       remote: slicemk
