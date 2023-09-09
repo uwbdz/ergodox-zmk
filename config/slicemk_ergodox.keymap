@@ -43,7 +43,7 @@
 	            compatible = "zmk,behavior-tap-dance";
 	            label = "TOGGLE";
 	            tapping-term-ms = <200>;
-	            bindings = <&none>, <&none>, <&&tog LAYER_OFF>;
+	            bindings = <&none>, <&none>, <&tog LAYER_OFF>;
 	        };
 	};
 	combo {
