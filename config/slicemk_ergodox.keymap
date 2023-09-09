@@ -44,7 +44,7 @@
 		combo_Q {
 			timeout-ms = <50>;
 			key-positions = <16 54>;
-			bindings = <&kp LS(Q)>, <&partial-hold-position 54>;
+			bindings = <&kp LS(Q)>, <&partial_hold_position 54>;
 		};
 		combo_W {
 			timeout-ms = <50>;
