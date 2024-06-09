@@ -128,7 +128,7 @@
 		combo_J {
 			timeout-ms = <50>;
 			key-positions = <41 36>;
-			bindings = <&kp LS(J)>, <&partial_hold_position 41>;
+			bindings = <&sk LSHIFT>, <&kp J>, <&partial_hold_position 41>;
 		};
 		combo_K {
 			timeout-ms = <50>;
