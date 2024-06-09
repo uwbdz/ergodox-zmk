@@ -187,52 +187,52 @@
 		combo_0 {
 			timeout-ms = <50>;
 			key-positions = <29 74>;
-			bindings = <&macro_shift_hold NUMBER_0>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_0>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_1 {
 			timeout-ms = <50>;
 			key-positions = <30 74>;
-			bindings = <&macro_shift_hold NUMBER_1>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_1>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_2 {
 			timeout-ms = <50>;
 			key-positions = <31 74>;
-			bindings = <&macro_shift_hold NUMBER_2>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_2>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_3 {
 			timeout-ms = <50>;
 			key-positions = <32 74>;
-			bindings = <&macro_shift_hold NUMBER_3>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_3>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_4 {
 			timeout-ms = <50>;
 			key-positions = <33 74>;
-			bindings = <&macro_shift_hold NUMBER_4>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_4>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_5 {
 			timeout-ms = <50>;
 			key-positions = <36 74>;
-			bindings = <&macro_shift_hold NUMBER_5>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_5>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_6 {
 			timeout-ms = <50>;
 			key-positions = <37 74>;
-			bindings = <&macro_shift_hold NUMBER_6>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_6>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_7 {
 			timeout-ms = <50>;
 			key-positions = <38 74>;
-			bindings = <&macro_shift_hold NUMBER_7>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_7>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_8 {
 			timeout-ms = <50>;
 			key-positions = <39 74>;
-			bindings = <&macro_shift_hold NUMBER_8>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_8>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_9 {
 			timeout-ms = <50>;
 			key-positions = <40 74>;
-			bindings = <&macro_shift_hold NUMBER_9>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&kp NUMBER_9>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 
 		combo_exclam {
