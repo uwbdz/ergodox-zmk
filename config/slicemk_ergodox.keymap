@@ -194,10 +194,58 @@
 			bindings = <&macro_shift_hold M>, <&partial_hold_position 41>;
 		};
 
+		combo_less_than {
+			timeout-ms = <50>;
+			key-positions = <16 74>;
+			bindings = <&macro_num_hold LESS_THAN>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_greater_than {
+			timeout-ms = <50>;
+			key-positions = <17 74>;
+			bindings = <&macro_num_hold GREATER_THAN>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_lparen {
+			timeout-ms = <50>;
+			key-positions = <18 74>;
+			bindings = <&macro_num_hold LPAR>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_rparen {
+			timeout-ms = <50>;
+			key-positions = <19 74>;
+			bindings = <&macro_num_hold RPAR>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_lbracket {
+			timeout-ms = <50>;
+			key-positions = <24 74>;
+			bindings = <&macro_num_hold LBKT>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_rbracket {
+			timeout-ms = <50>;
+			key-positions = <25 74>;
+			bindings = <&macro_num_hold RBKT>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_lbrace {
+			timeout-ms = <50>;
+			key-positions = <26 74>;
+			bindings = <&macro_num_hold LBRC>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
+		combo_rbrace {
+			timeout-ms = <50>;
+			key-positions = <27 74>;
+			bindings = <&macro_num_hold LBRC>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+
 		combo_0 {
 			timeout-ms = <50>;
 			key-positions = <29 74>;
-			bindings = <&kp NUMBER_0>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&macro_num_hold NUMBER_0>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 		combo_1 {
 			timeout-ms = <50>;
@@ -374,7 +422,7 @@
 			bindings = <
 				&bootloader
 				&trans       &trans       &trans       &trans       &trans       &trans &trans &trans &trans &trans       &trans       &trans       &trans       &trans
-				&trans       &kp LESS_THAN &kp GREATER_THAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans &trans &trans &macro_left_bracket  &macro_right_bracket &macro_left_brace &macro_right_brace &trans  &trans
+				&trans       &kp LESS_THAN &kp GREATER_THAN &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &trans &trans &trans &trans &macro_left_bracket  &macro_right_bracket &macro_left_brace &macro_right_brace &trans
 				&kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &trans               &trans &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9
 				&trans       &trans       &trans       &trans       &trans       &trans &trans &trans &trans &trans       &trans       &trans       &trans       &trans
 				&trans       &trans       &trans       &trans       &trans                                   &trans       &trans       &trans       &trans       &trans
