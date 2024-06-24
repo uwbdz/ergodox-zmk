@@ -246,7 +246,7 @@
 		combo_rbrace {
 			timeout-ms = <50>;
 			key-positions = <27 74>;
-			bindings = <&macro_num_hold LBRC>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+			bindings = <&macro_num_hold RBRC>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 
 		combo_0 {
