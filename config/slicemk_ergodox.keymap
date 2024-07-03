@@ -301,7 +301,21 @@
 			key-positions = <40 74>;
 			bindings = <&macro_num_hold NUMBER_9>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
-
+		combo_minus {
+			timeout-ms = <50>;
+			key-positions = <24 74>;
+			bindings = <&macro_shift_hold MINUS>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+		combo_plus {
+			timeout-ms = <50>;
+			key-positions = <25 74>;
+			bindings = <&macro_shift_hold PLUS>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
+		combo_equal {
+			timeout-ms = <50>;
+			key-positions = <26 74>;
+			bindings = <&macro_shift_hold EQUAL>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
+		};
 		combo_exclam {
 			timeout-ms = <50>;
 			key-positions = <30 70>;
