@@ -70,6 +70,11 @@
 	};
 	combo {
 		compatible = "zmk,combos";
+		combo_colon {
+			timeout-ms = <50>;
+			key-positions = <41 39>;
+			bindings = <&macro_shift_hold SEMICOLON>, <&partial_hold_position 54>;
+		};
 		combo_Q {
 			timeout-ms = <50>;
 			key-positions = <16 54>;
@@ -321,7 +326,7 @@
 			bindings = <&kp DOLLAR>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
 		combo_percent {
-			timeout-ms = <50>;
+			timeout-ms = <100>;
 			key-positions = <34 70>;
 			bindings = <&kp PERCENT>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
@@ -331,7 +336,7 @@
 			bindings = <&kp CARET>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
 		combo_amp {
-			timeout-ms = <50>;
+			timeout-ms = <100>;
 			key-positions = <17 70>;
 			bindings = <&kp AMPERSAND>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
@@ -368,7 +373,7 @@
 				&kp LEFT_CONTROL &kp A            &kp S            &kp D                &kp F                 &kp G                                                       &kp H                 &kp J                   &kp K                &kp L             &kp SEMICOLON      &kp APOSTROPHE
 				&kp LEFT_SHIFT   &kp Z            &kp X            &kp C                &kp V                 &kp B                       &kp LC(TAB)   &kp LG(TAB)       &kp N                 &kp M                   &kp CMMA             &kp DOT           &kp FSLH           &kp RIGHT_SHIFT
 				&kp LEFT_META    &kp LEFT_CONTROL &kp LALT         &kp C_AC_BACK        &kp C_AC_FORWARD                                                                                        &out OUT_USB            &out OUT_BLE         &kp RALT          &kp RIGHT_CONTROL  &kp RIGHT_META
-				                                                                                              &bt_clear                    &macro_to_mac &kp C_VOLUME_UP  &bt BT_SEL 0
+				                                                                                              &bt_clear                   &macro_to_mac &kp C_VOLUME_UP   &bt BT_SEL 0
 				                                                                        &kp SPACE             &lt LAYER_SYMBOLS BACKSPACE &none         &kp C_VOLUME_DOWN &lt LAYER_MOVE ESCAPE &lt LAYER_NUMBERS ENTER
 				                                                                                                                          &none         &kp C_MUTE
 			>;
