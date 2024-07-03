@@ -326,7 +326,7 @@
 			bindings = <&kp DOLLAR>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
 		combo_percent {
-			timeout-ms = <100>;
+			timeout-ms = <100>; // I tend to miss the percent combo so give it more time.
 			key-positions = <34 70>;
 			bindings = <&kp PERCENT>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
@@ -336,8 +336,8 @@
 			bindings = <&kp CARET>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
 		combo_amp {
-			timeout-ms = <100>;
-			key-positions = <17 70>;
+			timeout-ms = <50>;
+			key-positions = <18 70>;
 			bindings = <&kp AMPERSAND>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
 		combo_ast {
