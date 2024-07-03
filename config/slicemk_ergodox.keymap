@@ -51,7 +51,7 @@
 				, <&macro_pause_for_release>
 				, <&macro_param_1to1>
 				, <&macro_release &kp MACRO_PLACEHOLDER>;)
-};=
+	};
 	behaviors {
 	        off: disable {
 	            compatible = "zmk,behavior-tap-dance";
