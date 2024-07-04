@@ -76,12 +76,6 @@
 		    #binding-cells = <0>;
 	            bindings = <&none>, <&none>, <&bt BT_CLR>;
 	        };
-	        hm: homerow_mods {
-	            compatible = "zmk,behavior-hold-tap";
-	            #binding-cells = <2>;
-	            flavor = "tap-preferred";
-	            bindings = <&kp>, <&kp>;
-	        };
 	    };
 	};
 	combo {
