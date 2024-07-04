@@ -55,28 +55,27 @@
 				, <&macro_release &kp MACRO_PLACEHOLDER>;)
 	};
 	behaviors {
-	        off: disable {
-	            compatible = "zmk,behavior-tap-dance";
-	            label = "DISABLE";
-	            tapping-term-ms = <200>;
+		off: disable {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "DISABLE";
+		    tapping-term-ms = <200>;
 		    #binding-cells = <0>;
-	            bindings = <&none>, <&none>, <&to LAYER_OFF>;
-	        };
-                on: enable {
-	            compatible = "zmk,behavior-tap-dance";
-	            label = "ENABLE";
-	            tapping-term-ms = <200>;
+		    bindings = <&none>, <&none>, <&to LAYER_OFF>;
+		};
+		on: enable {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "ENABLE";
+		    tapping-term-ms = <200>;
 		    #binding-cells = <0>;
-	            bindings = <&none>, <&none>, <&to LAYER_MAIN>;
-	        };
+		    bindings = <&none>, <&none>, <&to LAYER_MAIN>;
+		};
 		bt_clear: bt_clear {
-	            compatible = "zmk,behavior-tap-dance";
-	            label = "BT_CLEAR";
-	            tapping-term-ms = <200>;
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "BT_CLEAR";
+		    tapping-term-ms = <200>;
 		    #binding-cells = <0>;
-	            bindings = <&none>, <&none>, <&bt BT_CLR>;
-	        };
-	    };
+		    bindings = <&none>, <&none>, <&bt BT_CLR>;
+		};
 	};
 	combo {
 		compatible = "zmk,combos";
