@@ -105,6 +105,15 @@
 	            tapping-term-ms = <200>;
 	            flavor = "tap-preferred";
 	        };
+	        hm: homerow_mods {
+	            compatible = "zmk,behavior-hold-tap";
+	            #binding-cells = <2>;
+	            label = "HOMEROW_MOD";
+	            tapping-term-ms = <150>;
+	            quick-tap-ms = <0>;
+	            flavor = "tap-preferred";
+	            bindings = <&kp>, <&kp>;
+	        };
 	};
 	combo {
 		compatible = "zmk,combos";
