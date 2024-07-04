@@ -76,6 +76,12 @@
 		    #binding-cells = <0>;
 		    bindings = <&none>, <&none>, <&bt BT_CLR>;
 		};
+	        bspc_del: backspace_delete {
+	            compatible = "zmk,behavior-mod-morph";
+	            #binding-cells = <0>;
+	            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+	            mods = <(MOD_LSFT|MOD_RSFT)>;
+	        };
 	};
 	combo {
 		compatible = "zmk,combos";
