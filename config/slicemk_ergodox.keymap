@@ -102,15 +102,16 @@
 		    // so when you bind this you'll need a dummy placeholder for the second binding cell
 	            #binding-cells = <2>;
 	            bindings = <&kp>, <&caps_word>;
-	            tapping-term-ms = <200>;
-	            flavor = "tap-preferred";
+		    tapping-term-ms = <200>;
+	            flavor = "hold-preferred";
 	        };
 	        hm: homerow_mods {
 	            compatible = "zmk,behavior-hold-tap";
 	            #binding-cells = <2>;
 	            label = "HOMEROW_MOD";
 	            tapping-term-ms = <150>;
-	            quick-tap-ms = <0>;
+		    quick-tap-ms = <200>;
+		    require-prior-idle-ms = <125>;
 	            flavor = "tap-preferred";
 	            bindings = <&kp>, <&kp>;
 	        };
