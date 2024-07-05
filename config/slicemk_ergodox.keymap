@@ -109,7 +109,7 @@
 	            compatible = "zmk,behavior-hold-tap";
 	            #binding-cells = <2>;
 	            label = "HOMEROW_MOD";
-	            tapping-term-ms = <250>;
+	            tapping-term-ms = <350>;
 		    quick-tap-ms = <200>;
 		    // require-prior-idle-ms = <125>; need to upgrade version
 	            flavor = "tap-preferred";
@@ -436,11 +436,11 @@
 		layer_1 {
 			bindings = <
 				&bootloader
-				&trans &trans        &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans             &trans
-				&trans &trans        &trans &trans       &trans        &trans &trans         &kp LG(GRAVE) &trans                   &trans &trans &trans                &trans             &trans
-				&trans &trans        &trans &trans       &trans        &trans                              &trans                   &trans &trans &trans                &trans             &trans
-				&trans &trans        &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans             &trans
-				&trans &kp LEFT_META &trans &kp LG(LEFT) &kp LG(RIGHT)                                                              &trans &trans &trans                &kp RIGHT_META     &trans
+				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans                   &trans
+				&trans &trans          &trans &trans       &trans        &trans &trans         &kp LG(GRAVE) &trans                   &trans &trans &trans                &trans                   &trans
+				&trans &hm LEFT_META A &trans &trans       &trans        &trans                              &trans                   &trans &trans &trans                &hm RIGHT_META SEMICOLON &trans
+				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans                &trans                   &trans
+				&trans &trans          &trans &kp LG(LEFT) &kp LG(RIGHT)                                                              &trans &trans &trans                &trans                   &trans
 				                                                       &trans &macro_to_linux &trans       &trans
 				                                         &trans        &trans &trans         &trans        &lt LAYER_MACMOVE ESCAPE &trans
 				                                                              &trans         &trans
