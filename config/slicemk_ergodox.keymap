@@ -385,6 +385,11 @@
 			key-positions = <34 70>;
 			bindings = <&kp PERCENT>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
 		};
+		combo_grav {
+			timeout-ms = <50>;
+			key-positions = <16 70>;
+			bindings = <&kp GRAV>, <&partial_hold_position 70 &mo LAYER_SYMBOLS>;
+		};
 		combo_caret {
 			timeout-ms = <50>;
 			key-positions = <17 70>;
