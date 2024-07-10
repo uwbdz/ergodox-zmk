@@ -102,7 +102,7 @@
 		    // so when you bind this you'll need a dummy placeholder for the second binding cell
 	            #binding-cells = <2>;
 	            bindings = <&kp>, <&caps_word>;
-		    tapping-term-ms = <200>;
+		    tapping-term-ms = <100>;
 	            flavor = "hold-preferred";
 	        };
 	        hm: homerow_mods {
@@ -426,7 +426,7 @@
 				&kp GRAV                   &none              &none            &none                &none                 &off                         &on           &kp LG(LC(Q))     &kp C_PLAY_PAUSE      &none                   &none                &none             &none                       &none
 				&kp TAB                    &kp Q              &kp W            &kp E                &kp R                 &kp T                        &none         &kp LA(GRAVE)     &kp Y                 &kp U                   &kp I                &kp O             &kp P                       &none
 				&kp LEFT_CONTROL           &hm LEFT_CONTROL A &hm LALT S       &kp D                &kp F                 &kp G                                                        &kp H                 &kp J                   &kp K                &hm RALT L        &hm RIGHT_CONTROL SEMICOLON &kp APOSTROPHE
-				&caps_tap LEFT_SHIFT DUMMY &kp Z              &kp X            &kp C                &kp V                 &kp B                        &kp LC(TAB)   &kp LG(TAB)       &kp N                 &kp M                   &kp CMMA             &kp DOT           &kp FSLH                    &caps_tap RIGHT_SHIFT DUMMY
+				&kp LEFT_SHIFT             &kp Z              &kp X            &kp C                &kp V                 &kp B                        &kp LC(TAB)   &kp LG(TAB)       &kp N                 &kp M                   &kp CMMA             &kp DOT           &kp FSLH                    &kp RIGHT_SHIFT
 				&kp LEFT_META              &none              &none            &kp C_AC_BACK        &kp C_AC_FORWARD                                                                                         &out OUT_USB            &out OUT_BLE         &none             &none                       &kp RIGHT_META
 				                                                                                              &bt_clear                    &macro_to_mac &kp C_VOLUME_UP   &bt BT_SEL 0
 				                                                                        &kp SPACE             &lt_bspc LAYER_SYMBOLS DUMMY &none         &kp C_VOLUME_DOWN &lt LAYER_MOVE ESCAPE &lt LAYER_NUMBERS ENTER
