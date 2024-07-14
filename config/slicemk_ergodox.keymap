@@ -432,9 +432,9 @@
 				&hm LEFT_CONTROL TAB   &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                    &kp I             &kp O        &kp P                      &hm RIGHT_CONTROL APOSTROPHE
 				&kp LEFT_SHIFT         &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                    &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &kp RIGHT_SHIFT
 				&none                  &kp Z              &kp X       &kp C                &kp V       &kp B   &none   &none &kp N  &kp M                    &kp CMMA          &kp DOT      &kp FSLH                   &none
-				&kp LEFT_META          &none              &none       &none                &lt LAYER_MOVE SPACE                     &lt LAYER_NUMBERS ENTER  &out OUT_USB      &out OUT_BLE &none                      &kp RIGHT_META
+				&kp LEFT_META          &none              &none       &none                &lt LAYER_MOVE SPACE                     &lt_bspc LAYER_NUMBERS DUMMY  &out OUT_USB      &out OUT_BLE &none                      &kp RIGHT_META
 				                                                                                                     &bt_clear &macro_to_mac &none &bt BT_SEL 0
-				                                                                        &lt_bspc LAYER_SYMBOLS DUMMY &none     &none         &none &none &lt LAYER_MOVE ESCAPE
+				                                                                             &lt LAYER_SYMBOLS ENTER &none     &none         &none &none &lt LAYER_MOVE ESCAPE
 				                                                                                                               &none         &none
 			>;
 		};
