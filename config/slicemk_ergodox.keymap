@@ -118,11 +118,6 @@
 	};
 	combo {
 		compatible = "zmk,combos";
-		combo_colon {
-			timeout-ms = <50>;
-			key-positions = <29 39>;
-			bindings = <&macro_shift_hold SEMICOLON>, <&partial_hold_position 29>;
-		};
 		combo_apost {
 			timeout-ms = <50>;
 			key-positions = <29 40>;
@@ -202,6 +197,11 @@
 			timeout-ms = <50>;
 			key-positions = <40 34>;
 			bindings = <&macro_shift_hold G>, <&partial_hold_position 40>;
+		};
+		combo_colon {
+			timeout-ms = <50>;
+			key-positions = <40 39>;
+			bindings = <&macro_shift_hold SEMICOLON>, <&partial_hold_position 40>;
 		};
 		combo_H {
 			timeout-ms = <50>;
