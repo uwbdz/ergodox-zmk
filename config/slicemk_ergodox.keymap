@@ -355,7 +355,7 @@
 		combo_minus {
 			timeout-ms = <50>;
 			key-positions = <49 60>;
-			bindings = <&macro_num_hold MINUS>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			bindings = <&macro_num_hold MINUS>, <&partial_hold_position 29>;
 		};
 		combo_plus {
 			timeout-ms = <50>;
@@ -417,6 +417,11 @@
 			key-positions = <20 69>;
 			bindings = <&kp BACKSLASH>, <&partial_hold_position 69 &mo LAYER_SYMBOLS>;
 		};
+		combo_minus {
+			timeout-ms = <50>;
+			key-positions = <29 28>;
+			bindings = <&kp BACKSLASH>, <&partial_hold_position 69 &mo LAYER_SYMBOLS>;
+		}; 
 		combo_DelWord {
 			timeout-ms = <50>;
 			key-positions = <50 60>;
