@@ -122,7 +122,7 @@
 	            flavor = "tap-preferred";
 	            bindings = <&kp>, <&kp>;
 	        };
-	        balanced_ht: homerow_mods {
+	        balanced_ht: balanced_ht {
 	            compatible = "zmk,behavior-hold-tap";
 	            #binding-cells = <2>;
 	            label = "BALANCED_HT";
