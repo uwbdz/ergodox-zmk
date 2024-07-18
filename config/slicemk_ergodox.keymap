@@ -122,16 +122,6 @@
 	            flavor = "tap-preferred";
 	            bindings = <&kp>, <&kp>;
 	        };
-	        balanced_ht: balanced_ht {
-	            compatible = "zmk,behavior-hold-tap";
-	            #binding-cells = <2>;
-	            label = "BALANCED_HT";
-	            tapping-term-ms = <250>;
-		    quick-tap-ms = <200>;
-		    // require-prior-idle-ms = <125>; need to upgrade version
-	            flavor = "balanced";
-	            bindings = <&kp>, <&kp>;
-	        };
 	};
 	combo {
 		compatible = "zmk,combos";
@@ -447,7 +437,7 @@
 				&bootloader
 				&none                  &none              &none       &none                &none       &off    &on     &none &none  &none                    &none             &none        &none                      &none
 				&hm LEFT_CONTROL TAB   &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                    &kp I             &kp O        &kp P                      &hm RIGHT_CONTROL MINUS
-				&kp LEFT_SHIFT         &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                    &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &balanced_ht RIGHT_SHIFT APOSTROPHE
+				&kp LEFT_SHIFT         &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                    &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &kp APOSTROPHE
 				&caps_word             &kp Z              &kp X       &kp C                &kp V       &kp B   &none   &none &kp N  &kp M                    &kp CMMA          &kp DOT      &kp FSLH                   &caps_word
 				&kp LEFT_META          &none              &none       &none                &lt LAYER_MOVE SPACE                     &lt_bspc LAYER_NUMBERS DUMMY  &out OUT_USB      &out OUT_BLE &none                 &kp RIGHT_META
 				                                                                                                     &bt_clear &macro_to_mac &none &bt BT_SEL 0
