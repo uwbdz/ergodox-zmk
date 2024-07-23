@@ -456,7 +456,7 @@
 			bindings = <
 				&bootloader
 				&none                    &none              &none       &none                &none       &off    &on     &none &none  &none                    &none             &none        &none                      &none
-				&none                    &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                    &kp I             &kp O        &kp P                      &none
+				&kp TAB                  &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                    &kp I             &kp O        &kp P                      &kp MINUS
 				&ctrl_or_shift           &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                    &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &right_ctrl
 				&caps_tap LEFT_GUI DUMMY &kp Z              &kp X       &kp C                &kp V       &kp B   &none   &none &kp N  &kp M                    &kp CMMA          &kp DOT      &kp FSLH                   &caps_tap RIGHT_GUI DUMMY
 				&none                    &none              &none       &none                &lt LAYER_MOVE SPACE                     &lt_bspc LAYER_NUMBERS DUMMY  &out OUT_USB      &out OUT_BLE &none                 &none
