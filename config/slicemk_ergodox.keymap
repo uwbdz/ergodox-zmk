@@ -129,14 +129,14 @@
             	    compatible = "zmk,behavior-tap-dance";
             	    #binding-cells = <0>;
 		    label = "CONTROL_OR_SHIFT";
-            	    tapping-term-ms = <200>;
+            	    tapping-term-ms = <300>;
             	    bindings = <&kp LEFT_SHIFT>, <&kp LEFT_CONTROL>, <&none>;
 		};
 		right_ctrl: right_control {
 		    compatible = "zmk,behavior-tap-dance";
             	    #binding-cells = <0>;
 		    label = "RIGHT_CONTROL";
-            	    tapping-term-ms = <200>;
+            	    tapping-term-ms = <300>;
             	    bindings = <&hm LEFT_SHIFT APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
 		};
 	};
