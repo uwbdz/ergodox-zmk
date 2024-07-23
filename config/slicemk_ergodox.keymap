@@ -125,19 +125,19 @@
 	            flavor = "balanced";
 	            bindings = <&kp>, <&kp>;
 	        };
-		ctrl_or_tab: control_or_tab {
+		ctrl_or_shift: control_or_shift {
             	    compatible = "zmk,behavior-tap-dance";
             	    #binding-cells = <0>;
-		    label = "CONTROL_OR_TAB";
+		    label = "CONTROL_OR_SHIFT";
             	    tapping-term-ms = <200>;
-            	    bindings = <&kp TAB>, <&kp LEFT_CONTROL>, <&none>;
+            	    bindings = <&kp LEFT_SHIFT>, <&kp LEFT_CONTROL>, <&none>;
 		};
-		ctrl_or_minus: control_or_minus {
-            	    compatible = "zmk,behavior-tap-dance";
+		right_ctrl: right_control {
+		    compatible = "zmk,behavior-tap-dance";
             	    #binding-cells = <0>;
-		    label = "CONTROL_OR_MINUS";
+		    label = "RIGHT_CONTROL";
             	    tapping-term-ms = <200>;
-            	    bindings = <&kp MINUS>, <&kp RIGHT_CONTROL>, <&none>;
+            	    bindings = <&hm LEFT_SHIFT APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
 		};
 	};
 	combo {
@@ -456,8 +456,8 @@
 			bindings = <
 				&bootloader
 				&none                    &none              &none       &none                &none       &off    &on     &none &none  &none                    &none             &none        &none                      &none
-				&ctrl_or_tab          &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                    &kp I             &kp O        &kp P                      &ctrl_or_minus
-				&kp LEFT_SHIFT           &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                    &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &hm LEFT_SHIFT APOSTROPHE
+				&none                    &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                    &kp I             &kp O        &kp P                      &none
+				&ctrl_or_shift           &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                    &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &right_ctrl
 				&caps_tap LEFT_GUI DUMMY &kp Z              &kp X       &kp C                &kp V       &kp B   &none   &none &kp N  &kp M                    &kp CMMA          &kp DOT      &kp FSLH                   &caps_tap RIGHT_GUI DUMMY
 				&none                    &none              &none       &none                &lt LAYER_MOVE SPACE                     &lt_bspc LAYER_NUMBERS DUMMY  &out OUT_USB      &out OUT_BLE &none                 &none
 				                                                                                                     &bt_clear &macro_to_mac &none &bt BT_SEL 0
