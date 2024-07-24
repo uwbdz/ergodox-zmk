@@ -137,7 +137,7 @@
             	    #binding-cells = <0>;
 		    label = "RIGHT_CONTROL";
             	    tapping-term-ms = <200>;
-            	    bindings = <&macro_left_shift_hold APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
+            	    bindings = <&macro_left_shift_hold RIGHT_SHIFT>, <&kp RIGHT_CONTROL>, <&none>;
 		};
 		ht_in_td: hold_tap_in_tap_dance {
 	            compatible = "zmk,behavior-hold-tap";
