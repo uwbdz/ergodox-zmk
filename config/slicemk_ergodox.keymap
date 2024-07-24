@@ -137,8 +137,18 @@
             	    #binding-cells = <0>;
 		    label = "RIGHT_CONTROL";
             	    tapping-term-ms = <250>;
-            	    bindings = <&hm LEFT_SHIFT APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
+            	    bindings = <&ht_in_td LEFT_SHIFT APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
 		};
+		ht_in_td: hold_tap_in_tap_dance {
+	            compatible = "zmk,behavior-hold-tap";
+	            #binding-cells = <2>;
+	            label = "HOLD_TAP_IN_TAP_DANCE";
+	            tapping-term-ms = <1>; // The tap dance should provide the time needed to press both keys
+		    quick-tap-ms = <200>;
+		    // require-prior-idle-ms = <125>; need to upgrade version
+	            flavor = "hold-preferred";
+	            bindings = <&kp>, <&kp>;
+		}
 	};
 	combo {
 		compatible = "zmk,combos";
