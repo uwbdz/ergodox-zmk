@@ -144,8 +144,6 @@
 	            #binding-cells = <2>;
 	            label = "HOLD_TAP_IN_TAP_DANCE";
 	            tapping-term-ms = <1>; // The tap dance should provide the time needed to press both keys
-		    quick-tap-ms = <200>;
-		    // require-prior-idle-ms = <125>; need to upgrade version
 	            flavor = "hold-preferred";
 	            bindings = <&kp>, <&kp>;
 		}
