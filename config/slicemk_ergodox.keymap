@@ -136,8 +136,8 @@
 		    compatible = "zmk,behavior-tap-dance";
             	    #binding-cells = <0>;
 		    label = "RIGHT_CONTROL";
-            	    tapping-term-ms = <250>;
-            	    bindings = <&ht_in_td LEFT_SHIFT APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
+            	    tapping-term-ms = <200>;
+            	    bindings = <&macro_left_shift_hold APOSTROPHE>, <&kp RIGHT_CONTROL>, <&none>;
 		};
 		ht_in_td: hold_tap_in_tap_dance {
 	            compatible = "zmk,behavior-hold-tap";
