@@ -146,7 +146,7 @@
 	            tapping-term-ms = <1>; // The tap dance should provide the time needed to press both keys
 	            flavor = "hold-preferred";
 	            bindings = <&kp>, <&kp>;
-		}
+		};
 	};
 	combo {
 		compatible = "zmk,combos";
