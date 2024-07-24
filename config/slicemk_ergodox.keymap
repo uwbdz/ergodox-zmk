@@ -160,7 +160,7 @@
 		combo_Q {
 			timeout-ms = <50>;
 			key-positions = <16 40>;
-			bindings = <&kp LS(Q)>;
+			bindings = <&kp LS(Q)>, <&partial_hold_position 40>;
 		};
 		combo_W {
 			timeout-ms = <50>;
