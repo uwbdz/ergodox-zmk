@@ -160,7 +160,7 @@
 		combo_Q {
 			timeout-ms = <50>;
 			key-positions = <16 40>;
-			bindings = <&macro_left_shift_hold Q>,  <&macro_tap_time 210>, <&partial_hold_position 40>; // Add the wait to prevent triggering the apostrophe
+			bindings = <&macro_left_shift_hold Q>,  <&macro_tap_time 210>, <&partial_hold_position 40 &none>; // Add the wait to prevent triggering the apostrophe
 		};
 		combo_W {
 			timeout-ms = <50>;
