@@ -236,7 +236,7 @@
 		combo_colon {
 			timeout-ms = <50>;
 			key-positions = <40 39>;
-			bindings = <&macro_left_shift_hold SEMICOLON>, <&partial_hold_position 40>;
+			bindings = <&kp LS(SEMICOLON)>;
 		};
 		combo_H {
 			timeout-ms = <50>;
