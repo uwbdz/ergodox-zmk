@@ -122,7 +122,7 @@
 	            tapping-term-ms = <200>;
 		    quick-tap-ms = <200>;
 		    // require-prior-idle-ms = <125>; need to upgrade version
-	            flavor = "balanced";
+	            flavor = "hold-preferred"; // Necessary to prevent the tap from triggering after a macro using partial_hold_position
 	            bindings = <&kp>, <&kp>;
 	        };
 		ctrl_or_shift: control_or_shift {
