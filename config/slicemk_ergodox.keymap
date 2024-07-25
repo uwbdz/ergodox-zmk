@@ -160,27 +160,27 @@
 		combo_Q {
 			timeout-ms = <50>;
 			key-positions = <16 40>;
-			bindings = <&macro_left_shift_hold Q>, <&partial_hold_position 40>, <&macro_wait_time 200>; // Add the wait to prevent triggering the apostrophe
+			bindings = <&macro_left_shift_hold Q>,  <&macro_tap_time 200>, <&partial_hold_position 40>; // Add the wait to prevent triggering the apostrophe
 		};
 		combo_W {
 			timeout-ms = <50>;
 			key-positions = <17 40>;
-			bindings = <&macro_left_shift_hold W>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold W>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_E {
 			timeout-ms = <50>;
 			key-positions = <18 40>;
-			bindings = <&macro_left_shift_hold E>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold E>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_R {
 			timeout-ms = <50>;
 			key-positions = <19 40>;
-			bindings = <&macro_left_shift_hold R>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold R>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_T {
 			timeout-ms = <50>;
 			key-positions = <20 40>;
-			bindings = <&macro_left_shift_hold T>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold T>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_Y {
 			timeout-ms = <50>;
@@ -211,27 +211,27 @@
 		combo_A {
 			timeout-ms = <50>;
 			key-positions = <30 40>;
-			bindings = <&macro_left_shift_hold A>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold A>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_S {
 			timeout-ms = <50>;
 			key-positions = <40 31>;
-			bindings = <&macro_left_shift_hold S>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold S>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_D {
 			timeout-ms = <50>;
 			key-positions = <40 32>;
-			bindings = <&macro_left_shift_hold D>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold D>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_F {
 			timeout-ms = <50>;
 			key-positions = <40 33>;
-			bindings = <&macro_left_shift_hold F>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold F>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_G {
 			timeout-ms = <50>;
 			key-positions = <40 34>;
-			bindings = <&macro_left_shift_hold G>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold G>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_colon {
 			timeout-ms = <50>;
@@ -261,27 +261,27 @@
 		combo_Z {
 			timeout-ms = <50>;
 			key-positions = <40 42>;
-			bindings = <&macro_left_shift_hold Z>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold Z>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_X {
 			timeout-ms = <50>;
 			key-positions = <40 43>;
-			bindings = <&macro_left_shift_hold X>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold X>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_C {
 			timeout-ms = <50>;
 			key-positions = <40 44>;
-			bindings = <&macro_left_shift_hold C>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold C>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_V {
 			timeout-ms = <50>;
 			key-positions = <40 45>;
-			bindings = <&macro_left_shift_hold V>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold V>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_B {
 			timeout-ms = <50>;
 			key-positions = <40 46>;
-			bindings = <&macro_left_shift_hold B>, <&partial_hold_position 40>, <&macro_wait_time 200>;
+			bindings = <&macro_left_shift_hold B>,  <&macro_tap_time 200>, <&partial_hold_position 40>;
 		};
 		combo_N {
 			timeout-ms = <50>;
