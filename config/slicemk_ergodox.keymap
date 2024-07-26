@@ -306,14 +306,14 @@
 
 		combo_lparen {
 			timeout-ms = <50>;
-			key-positions = <18 60>;
-			bindings = <&macro_num_hold LPAR>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <18 61>;
+			bindings = <&macro_num_hold LPAR>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 
 		combo_rparen {
 			timeout-ms = <50>;
-			key-positions = <19 60>;
-			bindings = <&macro_num_hold RPAR>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <19 61>;
+			bindings = <&macro_num_hold RPAR>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 
 		combo_lbracket {
@@ -342,53 +342,53 @@
 
 		combo_0 {
 			timeout-ms = <50>;
-			key-positions = <29 60>;
-			bindings = <&macro_num_hold NUMBER_0>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <29 61>;
+			bindings = <&macro_num_hold NUMBER_0>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_1 {
 			timeout-ms = <50>;
-			key-positions = <30 60>;
-			bindings = <&macro_num_hold NUMBER_1>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <30 61>;
+			bindings = <&macro_num_hold NUMBER_1>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_2 {
 			timeout-ms = <50>;
-			key-positions = <31 60>;
-			bindings = <&macro_num_hold NUMBER_2>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <31 61>;
+			bindings = <&macro_num_hold NUMBER_2>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_3 {
 			timeout-ms = <50>;
-			key-positions = <32 60>;
-			bindings = <&macro_num_hold NUMBER_3>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <32 61>;
+			bindings = <&macro_num_hold NUMBER_3>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_4 {
 			timeout-ms = <50>;
-			key-positions = <33 60>;
-			bindings = <&macro_num_hold NUMBER_4>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <33 61>;
+			bindings = <&macro_num_hold NUMBER_4>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_5 {
 			timeout-ms = <50>;
-			key-positions = <36 60>;
-			bindings = <&macro_num_hold NUMBER_5>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <36 61>;
+			bindings = <&macro_num_hold NUMBER_5>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_6 {
 			timeout-ms = <50>;
-			key-positions = <37 60>;
-			bindings = <&macro_num_hold NUMBER_6>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <37 61>;
+			bindings = <&macro_num_hold NUMBER_6>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_7 {
 			timeout-ms = <50>;
-			key-positions = <38 60>;
-			bindings = <&macro_num_hold NUMBER_7>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <38 61>;
+			bindings = <&macro_num_hold NUMBER_7>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_8 {
 			timeout-ms = <50>;
-			key-positions = <39 60>;
-			bindings = <&macro_num_hold NUMBER_8>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <39 61>;
+			bindings = <&macro_num_hold NUMBER_8>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_9 {
 			timeout-ms = <50>;
-			key-positions = <40 60>;
-			bindings = <&macro_num_hold NUMBER_9>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <40 61>;
+			bindings = <&macro_num_hold NUMBER_9>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_minus {
 			timeout-ms = <50>;
@@ -397,13 +397,13 @@
 		};
 		combo_plus {
 			timeout-ms = <50>;
-			key-positions = <51 60>;
-			bindings = <&macro_num_hold PLUS>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <51 61>;
+			bindings = <&macro_num_hold PLUS>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_equal {
 			timeout-ms = <50>;
-			key-positions = <52 60>;
-			bindings = <&macro_num_hold EQUAL>, <&partial_hold_position 60 &mo LAYER_NUMBERS>;
+			key-positions = <52 61>;
+			bindings = <&macro_num_hold EQUAL>, <&partial_hold_position 61 &mo LAYER_NUMBERS>;
 		};
 		combo_exclam {
 			timeout-ms = <50>;
