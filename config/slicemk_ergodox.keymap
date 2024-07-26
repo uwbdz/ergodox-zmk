@@ -490,7 +490,7 @@
 				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans &trans                   &trans
 				&trans &hm LEFT_META A &trans &trans       &trans        &trans                              &trans                   &trans &trans &trans &hm RIGHT_META SEMICOLON &trans
 				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans &trans                   &trans
-				&trans &trans          &trans &trans       &lt LAYER_MACMOVE SPACE                                                    &trans &trans &trans &trans                   &trans
+				&trans &trans          &trans &mo LAYER_MACMOVE &trans                                                    &trans &trans &trans &trans                   &trans
 				                                                       &trans &macro_to_linux &trans       &trans
 				                                         &trans        &trans &trans         &trans        &trans &lt LAYER_MACMOVE ESCAPE
 				                                                              &trans         &trans
