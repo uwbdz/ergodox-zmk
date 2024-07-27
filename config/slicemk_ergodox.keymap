@@ -450,6 +450,11 @@
 			key-positions = <19 69>;
 			bindings = <&kp ASTERISK>, <&partial_hold_position 69 &mo LAYER_SYMBOLS>;
 		};
+		combo_question {
+			timeout-ms = <50>;
+			key-positions = <29 53>;
+			bindings = <&macro_left_shift_hold FSLH>, <&partial_hold_position 29>;
+		};
 		combo_backslash {
 			timeout-ms = <50>;
 			key-positions = <20 69>;
