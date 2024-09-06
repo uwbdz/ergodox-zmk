@@ -11,7 +11,6 @@
 #define LAYER_MOVE 3
 #define LAYER_MACMOVE 4
 #define LAYER_NUMBERS 5
-#define LAYER_OFF 6
 
 #define DUMMY 0
 
@@ -57,20 +56,6 @@
 				, <&macro_release &kp MACRO_PLACEHOLDER>;)
 	};
 	behaviors {
-		off: disable {
-		    compatible = "zmk,behavior-tap-dance";
-		    label = "DISABLE";
-		    tapping-term-ms = <200>;
-		    #binding-cells = <0>;
-		    bindings = <&none>, <&none>, <&to LAYER_OFF>;
-		};
-		on: enable {
-		    compatible = "zmk,behavior-tap-dance";
-		    label = "ENABLE";
-		    tapping-term-ms = <200>;
-		    #binding-cells = <0>;
-		    bindings = <&none>, <&none>, <&to LAYER_MAIN>;
-		};
 		bt_clear: bt_clear {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "BT_CLEAR";
@@ -490,7 +475,7 @@
 //    ┌──────────────────────┐                                                                                                                                                                                                                                           
 //    │         boot         │                                                                                                                                                                                                                                           
 //    ├──────────────────────┼────────────────────┬────────────┬─────────────────┬──────────────────────────┬───────────┬───────────────┐   ┌─────┬──────────┬───────────────────────────────┬─────────────────┬────────────┬────────────────────┬──────────────────────┐
-//    │                      │                    │            │                 │                          │   &off    │      &on      │   │     │          │                               │                 │            │                    │                      │
+//    │                      │                    │            │                 │                          │           │               │   │     │          │                               │                 │            │                    │                      │
 //    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┤   ├─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
 //    │         tab          │         Q          │     W      │        E        │            R             │     T     │               │   │     │    Y     │               U               │        I        │     O      │         P          │          -           │
 //    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┘   └─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
@@ -507,7 +492,7 @@
 //                                                                                                                      │               │   │     │                                                                                                                      
 //                                                                                                                      └───────────────┘   └─────┘                                                                                                                      
   &bootloader                                                                                                                                                                                                                                                                             
-  &none                      &none                &none        &none            &none                     &off        &on                 &none   &none          &none                             &none            &none          &none                        &none                     
+  &none                      &none                &none        &none            &none                     &none       &none               &none   &none          &none                             &none            &none          &none                        &none                     
   &kp TAB                    &kp Q                &kp W        &kp E            &kp R                     &kp T       &none               &none   &kp Y          &kp U                             &kp I            &kp O          &kp P                        &kp MINUS                 
   &kp LEFT_SHIFT             &hm LEFT_CONTROL A   &hm LALT S   &kp D            &kp F                     &kp G                                   &kp H          &kp J                             &kp K            &hm RALT L     &hm LEFT_CONTROL SEMICOLON   &om RIGHT_SHIFT APOSTROPHE
   &caps_tap LEFT_GUI DUMMY   &kp Z                &kp X        &kp C            &kp V                     &kp B       &none               &none   &kp N          &kp M                             &kp CMMA         &kp DOT        &kp FSLH                     &caps_tap RIGHT_GUI DUMMY 
@@ -675,38 +660,6 @@
                                                                              &trans   &trans       &trans   &trans                                                                                            
                                                               &trans         &trans   &trans       &trans   &trans   &trans                                                                                   
                                                                                       &trans       &trans                                                                                                     
-			>;
-		};
-		layer_6 {
-			bindings = <
-//    ┌──────┐                                                                                  
-//    │ boot │                                                                                  
-//    ├──────┼─────┬─────┬─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
-//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
-//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┘   └─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-//    │      │     │     │     │     │     │               │     │     │     │     │     │     │
-//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┐   ┌─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
-//    ├──────┼─────┼─────┼─────┼─────┼─────┴─────┘   └─────┴─────┼─────┼─────┼─────┼─────┼─────┤
-//    │      │     │     │     │     │                           │     │     │     │     │     │
-//    └──────┴─────┴─────┴─────┴─────┼─────┬─────┐   ┌─────┬─────┼─────┴─────┴─────┴─────┴─────┘
-//                                   │     │     │   │     │     │                              
-//                             ┌─────┼─────┼─────┤   ├─────┼─────┼─────┐                        
-//                             │     │     │     │   │     │     │     │                        
-//                             └─────┴─────┼─────┤   ├─────┼─────┴─────┘                        
-//                                         │     │   │     │                                    
-//                                         └─────┘   └─────┘                                    
-  &bootloader                                                                                                             
-  &none         &none   &none   &none   &none   &none   &trans       &none   &none   &none   &none   &none   &none   &none
-  &none         &none   &none   &none   &none   &none   &none        &none   &none   &none   &none   &none   &none   &none
-  &none         &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
-  &none         &none   &none   &none   &none   &none   &none        &none   &none   &none   &none   &none   &none   &none
-  &none         &none   &none   &none   &none                                        &none   &none   &none   &none   &none
-                                                &none   &none        &none   &none                                        
-                                        &none   &none   &none        &none   &none   &none                                
-                                                        &none        &none                                                
 			>;
 		};
 	};
