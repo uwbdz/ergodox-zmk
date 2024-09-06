@@ -487,94 +487,226 @@
 		compatible = "zmk,keymap";
 		layer_0 {
 			bindings = <
-				&bootloader
-				&none                    &none              &none       &none                &none       &off    &on     &none &none  &none                            &none             &none        &none                      &none
-				&kp TAB                  &kp Q              &kp W       &kp E                &kp R       &kp T   &none   &none &kp Y  &kp U                            &kp I             &kp O        &kp P                      &kp MINUS
-				&kp LEFT_SHIFT           &hm LEFT_CONTROL A &hm LALT S  &kp D                &kp F       &kp G                 &kp H  &kp J                            &kp K             &hm RALT L   &hm LEFT_CONTROL SEMICOLON &om RIGHT_SHIFT APOSTROPHE
-				&caps_tap LEFT_GUI DUMMY &kp Z              &kp X       &kp C                &kp V       &kp B   &none   &none &kp N  &kp M                            &kp CMMA          &kp DOT      &kp FSLH                   &caps_tap RIGHT_GUI DUMMY
-				&none                    &none              &none       &mo LAYER_MOVE       &hm LEFT_CONTROL SPACE                   &mod_or_del RIGHT_CONTROL DUMMY  &mo LAYER_MOVE    &out OUT_USB &out OUT_BLE               &none
-				                                                                                                      &bt_clear &macro_to_mac &none &bt BT_SEL 0
-				                                                                             &lt LAYER_SYMBOLS ENTER &none     &none         &none &none &lt LAYER_NUMBERS ESCAPE
-				                                                                                                               &none         &none
+//    ┌──────────────────────┐                                                                                                                                                                                                                                           
+//    │         boot         │                                                                                                                                                                                                                                           
+//    ├──────────────────────┼────────────────────┬────────────┬─────────────────┬──────────────────────────┬───────────┬───────────────┐   ┌─────┬──────────┬───────────────────────────────┬─────────────────┬────────────┬────────────────────┬──────────────────────┐
+//    │                      │                    │            │                 │                          │   &off    │      &on      │   │     │          │                               │                 │            │                    │                      │
+//    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┤   ├─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
+//    │         tab          │         Q          │     W      │        E        │            R             │     T     │               │   │     │    Y     │               U               │        I        │     O      │         P          │          -           │
+//    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┘   └─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
+//    │         lsft         │ &hm left_CONTROL A │ &hm lalt S │        D        │            F             │     G     │                         │    H     │               J               │        K        │ &hm ralt L │ &hm left_CONTROL ; │      &om rsft '      │
+//    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┐   ┌─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
+//    │ &caps_tap lgui DUMMY │         Z          │     X      │        C        │            V             │     B     │               │   │     │    N     │               M               │      CMMA       │     .      │         /          │ &caps_tap rgui DUMMY │
+//    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┴───────────────┘   └─────┴──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
+//    │                      │                    │            │ mo laltYER_MOVE │   &hm left_CONTROL spc   │                                                │ mod_or_del rght_CONTROL DUMMY │ mo laltYER_MOVE │  out_ usb  │      out_ ble      │                      │
+//    └──────────────────────┴────────────────────┴────────────┴─────────────────┴──────────────────────────┼───────────┬───────────────┐   ┌─────┬──────────┼───────────────────────────────┴─────────────────┴────────────┴────────────────────┴──────────────────────┘
+//                                                                                                          │ &bt_clear │ &macro_to_mac │   │     │ bt_sel 0 │                                                                                                           
+//                                                                               ┌──────────────────────────┼───────────┼───────────────┤   ├─────┼──────────┼───────────────────────────────┐                                                                           
+//                                                                               │ lt laltYER_SYMBOlsft ent │           │               │   │     │          │   lt laltYER_NUMBErsft esc    │                                                                           
+//                                                                               └──────────────────────────┴───────────┼───────────────┤   ├─────┼──────────┴───────────────────────────────┘                                                                           
+//                                                                                                                      │               │   │     │                                                                                                                      
+//                                                                                                                      └───────────────┘   └─────┘                                                                                                                      
+  &bootloader                                                                                                                                                                                                                                                                             
+  &none                      &none                &none        &none            &none                     &off        &on                 &none   &none          &none                             &none            &none          &none                        &none                     
+  &kp TAB                    &kp Q                &kp W        &kp E            &kp R                     &kp T       &none               &none   &kp Y          &kp U                             &kp I            &kp O          &kp P                        &kp MINUS                 
+  &kp LEFT_SHIFT             &hm LEFT_CONTROL A   &hm LALT S   &kp D            &kp F                     &kp G                                   &kp H          &kp J                             &kp K            &hm RALT L     &hm LEFT_CONTROL SEMICOLON   &om RIGHT_SHIFT APOSTROPHE
+  &caps_tap LEFT_GUI DUMMY   &kp Z                &kp X        &kp C            &kp V                     &kp B       &none               &none   &kp N          &kp M                             &kp CMMA         &kp DOT        &kp FSLH                     &caps_tap RIGHT_GUI DUMMY 
+  &none                      &none                &none        &mo LAYER_MOVE   &hm LEFT_CONTROL SPACE                                                           &mod_or_del RIGHT_CONTROL DUMMY   &mo LAYER_MOVE   &out OUT_USB   &out OUT_BLE                 &none                     
+                                                                                                          &bt_clear   &macro_to_mac       &none   &bt BT_SEL 0                                                                                                                            
+                                                                                &lt LAYER_SYMBOLS ENTER   &none       &none               &none   &none          &lt LAYER_NUMBERS ESCAPE                                                                                                 
+                                                                                                                      &none               &none                                                                                                                                           
 			>;
 		};
 		layer_1 {
 			bindings = <
-				&bootloader
-				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans &trans                   &trans
-				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans &trans                   &trans
-				&trans &hm LEFT_META A &trans &trans       &trans        &trans                              &trans                   &trans &trans &trans &hm RIGHT_META SEMICOLON &trans
-				&trans &trans          &trans &trans       &trans        &trans &trans         &trans        &trans                   &trans &trans &trans &trans                   &trans
-				&trans &trans          &trans &mo LAYER_MACMOVE &trans                                                                &trans &mo LAYER_MACMOVE &trans &trans        &trans
-				                                                       &trans &macro_to_linux &trans       &trans
-				                                         &trans        &trans &trans         &trans        &trans &trans
-				                                                              &trans         &trans
+//    ┌──────┐                                                                                                                                          
+//    │ boot │                                                                                                                                          
+//    ├──────┼────────────┬─────┬────────────────────┬─────┬─────┬─────────────────┐   ┌─────┬─────┬─────┬────────────────────┬─────┬────────────┬─────┐
+//    │      │            │     │                    │     │     │                 │   │     │     │     │                    │     │            │     │
+//    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┼─────────────────┤   ├─────┼─────┼─────┼────────────────────┼─────┼────────────┼─────┤
+//    │      │            │     │                    │     │     │                 │   │     │     │     │                    │     │            │     │
+//    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┼─────────────────┘   └─────┼─────┼─────┼────────────────────┼─────┼────────────┼─────┤
+//    │      │ &hm lgui A │     │                    │     │     │                           │     │     │                    │     │ &hm rgui ; │     │
+//    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┼─────────────────┐   ┌─────┼─────┼─────┼────────────────────┼─────┼────────────┼─────┤
+//    │      │            │     │                    │     │     │                 │   │     │     │     │                    │     │            │     │
+//    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┴─────────────────┘   └─────┴─────┼─────┼────────────────────┼─────┼────────────┼─────┤
+//    │      │            │     │ mo laltYER_MACMOVE │     │                                       │     │ mo laltYER_MACMOVE │     │            │     │
+//    └──────┴────────────┴─────┴────────────────────┴─────┼─────┬─────────────────┐   ┌─────┬─────┼─────┴────────────────────┴─────┴────────────┴─────┘
+//                                                         │     │ &macro_to_linux │   │     │     │                                                    
+//                                                   ┌─────┼─────┼─────────────────┤   ├─────┼─────┼─────┐                                              
+//                                                   │     │     │                 │   │     │     │     │                                              
+//                                                   └─────┴─────┼─────────────────┤   ├─────┼─────┴─────┘                                              
+//                                                               │                 │   │     │                                                          
+//                                                               └─────────────────┘   └─────┘                                                          
+  &bootloader                                                                                                                                                                                   
+  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                     &trans
+  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                     &trans
+  &trans        &hm LEFT_META A   &trans   &trans              &trans   &trans                                  &trans   &trans   &trans              &trans   &hm RIGHT_META SEMICOLON   &trans
+  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                     &trans
+  &trans        &trans            &trans   &mo LAYER_MACMOVE   &trans                                                    &trans   &mo LAYER_MACMOVE   &trans   &trans                     &trans
+                                                                        &trans   &macro_to_linux       &trans   &trans                                                                          
+                                                               &trans   &trans   &trans                &trans   &trans   &trans                                                                 
+                                                                                 &trans                &trans                                                                                   
 			>;
 		};
 		layer_2 {
 			bindings = <
-				&bootloader
-				&trans &trans          &trans      &trans        &trans       &trans        &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &kp GRAV        &kp CARET   &kp AMPERSAND &kp ASTERISK &kp BACKSLASH &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &kp EXCLAMATION &kp AT_SIGN &kp HASH      &kp DOLLAR   &kp PERCENT                 &trans &macro_left_bracket &macro_right_bracket &macro_left_brace &macro_right_brace &trans
-				&trans &trans          &trans      &trans        &trans       &trans        &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans          &trans      &trans        &trans                                          &trans &trans &trans &trans &trans
-				                                                              &trans        &trans &trans &trans
-				                                                 &trans       &trans        &trans &trans &trans &trans
-				                                                                            &trans &trans
+//    ┌──────┐                                                                                                                                                   
+//    │ boot │                                                                                                                                                   
+//    ├──────┼────────┬─────┬─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────────────────────┬──────────────────────┬───────────────────┬────────────────────┬─────┐
+//    │      │        │     │     │     │     │     │   │     │     │                     │                      │                   │                    │     │
+//    ├──────┼────────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────────────────────┼──────────────────────┼───────────────────┼────────────────────┼─────┤
+//    │      │ GraltV │  ^  │  &  │  *  │  \  │     │   │     │     │                     │                      │                   │                    │     │
+//    ├──────┼────────┼─────┼─────┼─────┼─────┼─────┘   └─────┼─────┼─────────────────────┼──────────────────────┼───────────────────┼────────────────────┼─────┤
+//    │      │   !    │  @  │  #  │  $  │  %  │               │     │ &macro_left_bracket │ &macro_right_bracket │ &macro_left_brace │ &macro_right_brace │     │
+//    ├──────┼────────┼─────┼─────┼─────┼─────┼─────┐   ┌─────┼─────┼─────────────────────┼──────────────────────┼───────────────────┼────────────────────┼─────┤
+//    │      │        │     │     │     │     │     │   │     │     │                     │                      │                   │                    │     │
+//    ├──────┼────────┼─────┼─────┼─────┼─────┴─────┘   └─────┴─────┼─────────────────────┼──────────────────────┼───────────────────┼────────────────────┼─────┤
+//    │      │        │     │     │     │                           │                     │                      │                   │                    │     │
+//    └──────┴────────┴─────┴─────┴─────┼─────┬─────┐   ┌─────┬─────┼─────────────────────┴──────────────────────┴───────────────────┴────────────────────┴─────┘
+//                                      │     │     │   │     │     │                                                                                            
+//                                ┌─────┼─────┼─────┤   ├─────┼─────┼─────────────────────┐                                                                      
+//                                │     │     │     │   │     │     │                     │                                                                      
+//                                └─────┴─────┼─────┤   ├─────┼─────┴─────────────────────┘                                                                      
+//                                            │     │   │     │                                                                                                  
+//                                            └─────┘   └─────┘                                                                                                  
+  &bootloader                                                                                                                                                                                                             
+  &trans        &trans            &trans        &trans          &trans         &trans          &trans       &trans   &trans   &trans                &trans                 &trans              &trans               &trans
+  &trans        &kp GRAV          &kp CARET     &kp AMPERSAND   &kp ASTERISK   &kp BACKSLASH   &trans       &trans   &trans   &trans                &trans                 &trans              &trans               &trans
+  &trans        &kp EXCLAMATION   &kp AT_SIGN   &kp HASH        &kp DOLLAR     &kp PERCENT                           &trans   &macro_left_bracket   &macro_right_bracket   &macro_left_brace   &macro_right_brace   &trans
+  &trans        &trans            &trans        &trans          &trans         &trans          &trans       &trans   &trans   &trans                &trans                 &trans              &trans               &trans
+  &trans        &trans            &trans        &trans          &trans                                                        &trans                &trans                 &trans              &trans               &trans
+                                                                               &trans          &trans       &trans   &trans                                                                                               
+                                                                &trans         &trans          &trans       &trans   &trans   &trans                                                                                      
+                                                                                               &trans       &trans                                                                                                        
 			>;
 		};
 		layer_3 {
 			bindings = <
-				&bootloader
-				&trans        &trans        &trans            &trans            &trans           &trans &trans &trans &trans         &trans         &trans        &trans          &trans &trans
-				&kp LEFT_META &kp LG(L)     &kp C_MUTE        &kp C_VOLUME_DOWN &kp C_VOLUME_UP  &trans &trans &trans &trans         &kp HOME       &kp LC(LEFT)   &kp LC(RIGHT) &kp END         &trans
-				&trans        &kp LC(TAB)   &kp LA(GRAV)      &kp LG(TAB)       &trans           &trans               &trans         &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW &trans
-				&trans        &kp C_AC_BACK &kp C_AC_FORWARD  &kp C_PLAY_PAUSE  &trans           &trans &trans &trans &trans         &trans         &trans        &trans          &trans &trans
-				&trans        &trans    &trans        &trans            &trans                                                       &trans         &trans        &trans          &trans &trans
-				                                   &trans &trans &trans &trans
-				                            &trans &trans &trans &trans &trans         &trans
-				                                          &trans &trans
+//    ┌──────┐                                                                                                                        
+//    │ boot │                                                                                                                        
+//    ├──────┼───────────┬──────────────┬───────────┬──────┬─────┬─────┐   ┌─────┬─────┬──────┬────────────┬────────────┬──────┬─────┐
+//    │      │           │              │           │      │     │     │   │     │     │      │            │            │      │     │
+//    ├──────┼───────────┼──────────────┼───────────┼──────┼─────┼─────┤   ├─────┼─────┼──────┼────────────┼────────────┼──────┼─────┤
+//    │ lgui │  lgui(L)  │     mute     │   vold    │ volu │     │     │   │     │     │ home │ lctl(left) │ lctl(rght) │ end  │     │
+//    ├──────┼───────────┼──────────────┼───────────┼──────┼─────┼─────┘   └─────┼─────┼──────┼────────────┼────────────┼──────┼─────┤
+//    │      │ lctl(tab) │ lalt(GraltV) │ lgui(tab) │      │     │               │     │ left │    down    │     up     │ rght │     │
+//    ├──────┼───────────┼──────────────┼───────────┼──────┼─────┼─────┐   ┌─────┼─────┼──────┼────────────┼────────────┼──────┼─────┤
+//    │      │ C_AC_BACK │ C_AC_FORWARD │   play    │      │     │     │   │     │     │      │            │            │      │     │
+//    ├──────┼───────────┼──────────────┼───────────┼──────┼─────┴─────┘   └─────┴─────┼──────┼────────────┼────────────┼──────┼─────┤
+//    │      │           │              │           │      │                           │      │            │            │      │     │
+//    └──────┴───────────┴──────────────┴───────────┴──────┼─────┬─────┐   ┌─────┬─────┼──────┴────────────┴────────────┴──────┴─────┘
+//                                                         │     │     │   │     │     │                                              
+//                                                  ┌──────┼─────┼─────┤   ├─────┼─────┼──────┐                                       
+//                                                  │      │     │     │   │     │     │      │                                       
+//                                                  └──────┴─────┼─────┤   ├─────┼─────┴──────┘                                       
+//                                                               │     │   │     │                                                    
+//                                                               └─────┘   └─────┘                                                    
+  &bootloader                                                                                                                                                                                                
+  &trans          &trans          &trans             &trans              &trans            &trans   &trans       &trans   &trans   &trans           &trans           &trans          &trans            &trans
+  &kp LEFT_META   &kp LG(L)       &kp C_MUTE         &kp C_VOLUME_DOWN   &kp C_VOLUME_UP   &trans   &trans       &trans   &trans   &kp HOME         &kp LC(LEFT)     &kp LC(RIGHT)   &kp END           &trans
+  &trans          &kp LC(TAB)     &kp LA(GRAV)       &kp LG(TAB)         &trans            &trans                         &trans   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW   &trans
+  &trans          &kp C_AC_BACK   &kp C_AC_FORWARD   &kp C_PLAY_PAUSE    &trans            &trans   &trans       &trans   &trans   &trans           &trans           &trans          &trans            &trans
+  &trans          &trans          &trans             &trans              &trans                                                    &trans           &trans           &trans          &trans            &trans
+                                                                                           &trans   &trans       &trans   &trans                                                                             
+                                                                         &trans            &trans   &trans       &trans   &trans   &trans                                                                    
+                                                                                                    &trans       &trans                                                                                      
 			>;
 		};
 		layer_4 {
 			bindings = <
-				&bootloader
-				&trans       &trans        &trans        &trans            &trans          &trans &trans &trans &trans         &trans         &trans        &trans          &trans &trans
-				&kp LC(DOWN) &kp LG(LC(Q)) &kp C_MUTE    &kp C_VOLUME_DOWN &kp C_VOLUME_UP &trans &trans &trans &trans         &kp LG(LEFT)   &kp LA(LEFT)   &kp LA(RIGHT) &kp LG(RIGHT)    &trans
-				&trans       &kp LC(TAB)   &kp LG(GRAVE) &kp LG(TAB)       &trans          &trans               &trans         &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-				&trans       &kp LG(LEFT)  &kp LG(RIGHT) &kp C_PLAY_PAUSE  &trans          &trans &trans &trans &trans         &trans         &trans        &trans          &trans &trans
-				&trans       &trans        &trans        &trans            &trans                                              &trans         &trans        &trans          &trans &trans
-				                                   &trans &trans &trans &trans
-				                            &trans &trans &trans &trans &trans         &trans
-				                                          &trans &trans
+//    ┌────────────┐                                                                                                                                      
+//    │    boot    │                                                                                                                                      
+//    ├────────────┼───────────────┬────────────┬───────────┬──────┬─────┬─────┐   ┌─────┬─────┬────────────┬────────────┬────────────┬────────────┬─────┐
+//    │            │               │            │           │      │     │     │   │     │     │            │            │            │            │     │
+//    ├────────────┼───────────────┼────────────┼───────────┼──────┼─────┼─────┤   ├─────┼─────┼────────────┼────────────┼────────────┼────────────┼─────┤
+//    │ lctl(down) │ lgui(lctl(Q)) │    mute    │   vold    │ volu │     │     │   │     │     │ lgui(left) │ lalt(left) │ lalt(rght) │ lgui(rght) │     │
+//    ├────────────┼───────────────┼────────────┼───────────┼──────┼─────┼─────┘   └─────┼─────┼────────────┼────────────┼────────────┼────────────┼─────┤
+//    │            │   lctl(tab)   │  lgui(`)   │ lgui(tab) │      │     │               │     │    left    │    down    │     up     │    rght    │     │
+//    ├────────────┼───────────────┼────────────┼───────────┼──────┼─────┼─────┐   ┌─────┼─────┼────────────┼────────────┼────────────┼────────────┼─────┤
+//    │            │  lgui(left)   │ lgui(rght) │   play    │      │     │     │   │     │     │            │            │            │            │     │
+//    ├────────────┼───────────────┼────────────┼───────────┼──────┼─────┴─────┘   └─────┴─────┼────────────┼────────────┼────────────┼────────────┼─────┤
+//    │            │               │            │           │      │                           │            │            │            │            │     │
+//    └────────────┴───────────────┴────────────┴───────────┴──────┼─────┬─────┐   ┌─────┬─────┼────────────┴────────────┴────────────┴────────────┴─────┘
+//                                                                 │     │     │   │     │     │                                                          
+//                                                          ┌──────┼─────┼─────┤   ├─────┼─────┼────────────┐                                             
+//                                                          │      │     │     │   │     │     │            │                                             
+//                                                          └──────┴─────┼─────┤   ├─────┼─────┴────────────┘                                             
+//                                                                       │     │   │     │                                                                
+//                                                                       └─────┘   └─────┘                                                                
+  &bootloader                                                                                                                                                                                            
+  &trans         &trans          &trans          &trans              &trans            &trans   &trans       &trans   &trans   &trans           &trans           &trans          &trans            &trans
+  &kp LC(DOWN)   &kp LG(LC(Q))   &kp C_MUTE      &kp C_VOLUME_DOWN   &kp C_VOLUME_UP   &trans   &trans       &trans   &trans   &kp LG(LEFT)     &kp LA(LEFT)     &kp LA(RIGHT)   &kp LG(RIGHT)     &trans
+  &trans         &kp LC(TAB)     &kp LG(GRAVE)   &kp LG(TAB)         &trans            &trans                         &trans   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW   &trans
+  &trans         &kp LG(LEFT)    &kp LG(RIGHT)   &kp C_PLAY_PAUSE    &trans            &trans   &trans       &trans   &trans   &trans           &trans           &trans          &trans            &trans
+  &trans         &trans          &trans          &trans              &trans                                                    &trans           &trans           &trans          &trans            &trans
+                                                                                       &trans   &trans       &trans   &trans                                                                             
+                                                                     &trans            &trans   &trans       &trans   &trans   &trans                                                                    
+                                                                                                &trans       &trans                                                                                      
 			>;
 		};
 		layer_5 {
 			bindings = <
-				&bootloader
-				&trans       &trans       &trans       &trans               &trans                &trans   &trans &trans  &trans        &trans               &trans                &trans       &trans       &trans
-				&trans       &trans       &trans       &trans               &trans                &trans   &trans &trans  &trans        &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp PLUS     &kp EQUAL    &trans
-				&kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3         &kp NUMBER_4          &trans                  &trans        &kp NUMBER_5         &kp NUMBER_6          &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9
-				&trans       &trans       &trans       &trans               &trans                &trans   &trans &trans  &trans        &trans               &trans                &trans       &trans       &trans
-				&trans       &trans       &trans       &trans               &trans                                                      &trans               &trans                &trans       &trans       &trans
-				                                                                 &trans &trans &trans &trans
-				                                                    &trans       &trans &trans &trans &trans &trans
-				                                                                        &trans &trans
-
+//    ┌──────┐                                                                                  
+//    │ boot │                                                                                  
+//    ├──────┼─────┬─────┬─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┐
+//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │     │     │   │     │     │  (  │  )  │  +  │  =  │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┘   └─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+//    │  0   │  1  │  2  │  3  │  4  │     │               │     │  5  │  6  │  7  │  8  │  9  │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┐   ┌─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┴─────┘   └─────┴─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │                           │     │     │     │     │     │
+//    └──────┴─────┴─────┴─────┴─────┼─────┬─────┐   ┌─────┬─────┼─────┴─────┴─────┴─────┴─────┘
+//                                   │     │     │   │     │     │                              
+//                             ┌─────┼─────┼─────┤   ├─────┼─────┼─────┐                        
+//                             │     │     │     │   │     │     │     │                        
+//                             └─────┴─────┼─────┤   ├─────┼─────┴─────┘                        
+//                                         │     │   │     │                                    
+//                                         └─────┘   └─────┘                                    
+  &bootloader                                                                                                                                                                                                 
+  &trans         &trans         &trans         &trans         &trans         &trans   &trans       &trans   &trans   &trans                 &trans                  &trans         &trans         &trans      
+  &trans         &trans         &trans         &trans         &trans         &trans   &trans       &trans   &trans   &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS   &kp PLUS       &kp EQUAL      &trans      
+  &kp NUMBER_0   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &trans                         &trans   &kp NUMBER_5           &kp NUMBER_6            &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9
+  &trans         &trans         &trans         &trans         &trans         &trans   &trans       &trans   &trans   &trans                 &trans                  &trans         &trans         &trans      
+  &trans         &trans         &trans         &trans         &trans                                                 &trans                 &trans                  &trans         &trans         &trans      
+                                                                             &trans   &trans       &trans   &trans                                                                                            
+                                                              &trans         &trans   &trans       &trans   &trans   &trans                                                                                   
+                                                                                      &trans       &trans                                                                                                     
 			>;
 		};
 		layer_6 {
 			bindings = <
-				&bootloader
-				&none        &none        &none        &none        &none        &none  &trans &none  &none  &none        &none        &none        &none        &none 
-				&none        &none        &none        &none        &none        &none  &none  &none  &none  &none        &none        &none        &none        &none 
-				&none  	     &none        &none        &none        &none        &none                &none  &none        &none        &none        &none        &none 
-				&none        &none        &none        &none        &none        &none  &none  &none  &none  &none        &none        &none        &none        &none 
-				&none        &none        &none        &none        &none                                    &none        &none        &none        &none        &none 
-				                                                                 &none  &none  &none  &none 
-				                                                    &none        &none  &none  &none  &none  &none 
-				                                                                        &none  &none 
+//    ┌──────┐                                                                                  
+//    │ boot │                                                                                  
+//    ├──────┼─────┬─────┬─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┐
+//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┘   └─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │     │               │     │     │     │     │     │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┼─────┐   ┌─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │     │     │   │     │     │     │     │     │     │     │
+//    ├──────┼─────┼─────┼─────┼─────┼─────┴─────┘   └─────┴─────┼─────┼─────┼─────┼─────┼─────┤
+//    │      │     │     │     │     │                           │     │     │     │     │     │
+//    └──────┴─────┴─────┴─────┴─────┼─────┬─────┐   ┌─────┬─────┼─────┴─────┴─────┴─────┴─────┘
+//                                   │     │     │   │     │     │                              
+//                             ┌─────┼─────┼─────┤   ├─────┼─────┼─────┐                        
+//                             │     │     │     │   │     │     │     │                        
+//                             └─────┴─────┼─────┤   ├─────┼─────┴─────┘                        
+//                                         │     │   │     │                                    
+//                                         └─────┘   └─────┘                                    
+  &bootloader                                                                                                             
+  &none         &none   &none   &none   &none   &none   &trans       &none   &none   &none   &none   &none   &none   &none
+  &none         &none   &none   &none   &none   &none   &none        &none   &none   &none   &none   &none   &none   &none
+  &none         &none   &none   &none   &none   &none                        &none   &none   &none   &none   &none   &none
+  &none         &none   &none   &none   &none   &none   &none        &none   &none   &none   &none   &none   &none   &none
+  &none         &none   &none   &none   &none                                        &none   &none   &none   &none   &none
+                                                &none   &none        &none   &none                                        
+                                        &none   &none   &none        &none   &none   &none                                
+                                                        &none        &none                                                
 			>;
 		};
 	};
