@@ -587,9 +587,9 @@
 //    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┤   ├─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
 //    │         tab          │         Q          │     W      │        E        │            R             │     T     │               │   │     │    Y     │               U               │        I        │     O      │         P          │          -           │
 //    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┘   └─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
-//    │         lsft         │ &hm left_CONTROL A │ &hm lalt S │        D        │            F             │     G     │                         │    H     │               J               │        K        │ &hm ralt L │ &hm left_CONTROL ; │      &om rsft '      │
+//    │         lsft         │         A          │     S      │        D        │            F             │     G     │                         │    H     │               J               │        K        │     L      │         ;          │      &om rsft '      │
 //    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┼───────────────┐   ┌─────┼──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
-//    │ &caps_tap lgui DUMMY │         Z          │     X      │        C        │            V             │     B     │               │   │     │    N     │               M               │      CMMA       │     .      │         /          │ &caps_tap rgui DUMMY │
+//    │ &caps_tap lgui DUMMY │ &hm left_CONTROL Z │ &hm lalt X │        C        │            V             │     B     │               │   │     │    N     │               M               │      CMMA       │ &hm ralt . │ &hm left_CONTROL / │ &caps_tap rgui DUMMY │
 //    ├──────────────────────┼────────────────────┼────────────┼─────────────────┼──────────────────────────┼───────────┴───────────────┘   └─────┴──────────┼───────────────────────────────┼─────────────────┼────────────┼────────────────────┼──────────────────────┤
 //    │                      │                    │            │ mo laltYER_MOVE │   &hm left_CONTROL spc   │                                                │ mod_or_del rght_CONTROL DUMMY │ mo laltYER_MOVE │  out_ usb  │      out_ ble      │                      │
 //    └──────────────────────┴────────────────────┴────────────┴─────────────────┴──────────────────────────┼───────────┬───────────────┐   ┌─────┬──────────┼───────────────────────────────┴─────────────────┴────────────┴────────────────────┴──────────────────────┘
@@ -599,15 +599,15 @@
 //                                                                               └──────────────────────────┴───────────┼───────────────┤   ├─────┼──────────┴───────────────────────────────┘                                                                           
 //                                                                                                                      │               │   │     │                                                                                                                      
 //                                                                                                                      └───────────────┘   └─────┘                                                                                                                      
-  &bootloader                                                                                                                                                                                                                                                                             
-  &none                      &none                &none        &none            &none                     &none       &none               &none   &none          &none                             &none            &none          &none                        &none                     
-  &kp TAB                    &kp Q                &kp W        &kp E            &kp R                     &kp T       &none               &none   &kp Y          &kp U                             &kp I            &kp O          &kp P                        &kp MINUS                 
-  &kp LEFT_SHIFT             &hm LEFT_CONTROL A   &hm LALT S   &kp D            &kp F                     &kp G                                   &kp H          &kp J                             &kp K            &hm RALT L     &hm LEFT_CONTROL SEMICOLON   &om RIGHT_SHIFT APOSTROPHE
-  &caps_tap LEFT_GUI DUMMY   &kp Z                &kp X        &kp C            &kp V                     &kp B       &none               &none   &kp N          &kp M                             &kp CMMA         &kp DOT        &kp FSLH                     &caps_tap RIGHT_GUI DUMMY 
-  &none                      &none                &none        &mo LAYER_MOVE   &hm LEFT_CONTROL SPACE                                                           &mod_or_del RIGHT_CONTROL DUMMY   &mo LAYER_MOVE   &out OUT_USB   &out OUT_BLE                 &none                     
-                                                                                                          &bt_clear   &macro_to_mac       &none   &bt BT_SEL 0                                                                                                                            
-                                                                                &lt LAYER_SYMBOLS ENTER   &none       &none               &none   &none          &lt LAYER_NUMBERS ESCAPE                                                                                                 
-                                                                                                                      &none               &none                                                                                                                                           
+  &bootloader                                                                                                                                                                                                                                                                        
+  &none                      &none                &none        &none            &none                     &none       &none               &none   &none          &none                             &none            &none          &none                   &none                     
+  &kp TAB                    &kp Q                &kp W        &kp E            &kp R                     &kp T       &none               &none   &kp Y          &kp U                             &kp I            &kp O          &kp P                   &kp MINUS                 
+  &kp LEFT_SHIFT             &kp A                &kp S        &kp D            &kp F                     &kp G                                   &kp H          &kp J                             &kp K            &kp L          &kp SEMICOLON           &om RIGHT_SHIFT APOSTROPHE
+  &caps_tap LEFT_GUI DUMMY   &hm LEFT_CONTROL Z   &hm LALT X   &kp C            &kp V                     &kp B       &none               &none   &kp N          &kp M                             &kp CMMA         &hm RALT DOT   &hm LEFT_CONTROL FSLH   &caps_tap RIGHT_GUI DUMMY 
+  &none                      &none                &none        &mo LAYER_MOVE   &hm LEFT_CONTROL SPACE                                                           &mod_or_del RIGHT_CONTROL DUMMY   &mo LAYER_MOVE   &out OUT_USB   &out OUT_BLE            &none                     
+                                                                                                          &bt_clear   &macro_to_mac       &none   &bt BT_SEL 0                                                                                                                       
+                                                                                &lt LAYER_SYMBOLS ENTER   &none       &none               &none   &none          &lt LAYER_NUMBERS ESCAPE                                                                                            
+                                                                                                                      &none               &none                                                                                                                                      
 			>;
 		};
 		layer_1 {
@@ -619,9 +619,9 @@
 //    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┼─────────────────┤   ├─────┼─────┼─────┼────────────────────┼─────┼────────────┼─────┤
 //    │      │            │     │                    │     │     │                 │   │     │     │     │                    │     │            │     │
 //    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┼─────────────────┘   └─────┼─────┼─────┼────────────────────┼─────┼────────────┼─────┤
-//    │      │ &hm lgui A │     │                    │     │     │                           │     │     │                    │     │ &hm rgui ; │     │
+//    │      │            │     │                    │     │     │                           │     │     │                    │     │            │     │
 //    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┼─────────────────┐   ┌─────┼─────┼─────┼────────────────────┼─────┼────────────┼─────┤
-//    │      │            │     │                    │     │     │                 │   │     │     │     │                    │     │            │     │
+//    │      │ &hm lgui Z │     │                    │     │     │                 │   │     │     │     │                    │     │ &hm rgui / │     │
 //    ├──────┼────────────┼─────┼────────────────────┼─────┼─────┴─────────────────┘   └─────┴─────┼─────┼────────────────────┼─────┼────────────┼─────┤
 //    │      │            │     │ mo laltYER_MACMOVE │     │                                       │     │ mo laltYER_MACMOVE │     │            │     │
 //    └──────┴────────────┴─────┴────────────────────┴─────┼─────┬─────────────────┐   ┌─────┬─────┼─────┴────────────────────┴─────┴────────────┴─────┘
@@ -631,15 +631,15 @@
 //                                                   └─────┴─────┼─────────────────┤   ├─────┼─────┴─────┘                                              
 //                                                               │                 │   │     │                                                          
 //                                                               └─────────────────┘   └─────┘                                                          
-  &bootloader                                                                                                                                                                                   
-  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                     &trans
-  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                     &trans
-  &trans        &hm LEFT_META A   &trans   &trans              &trans   &trans                                  &trans   &trans   &trans              &trans   &hm RIGHT_META SEMICOLON   &trans
-  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                     &trans
-  &trans        &trans            &trans   &mo LAYER_MACMOVE   &trans                                                    &trans   &mo LAYER_MACMOVE   &trans   &trans                     &trans
-                                                                        &trans   &macro_to_linux       &trans   &trans                                                                          
-                                                               &trans   &trans   &trans                &trans   &trans   &trans                                                                 
-                                                                                 &trans                &trans                                                                                   
+  &bootloader                                                                                                                                                                              
+  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                &trans
+  &trans        &trans            &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &trans                &trans
+  &trans        &trans            &trans   &trans              &trans   &trans                                  &trans   &trans   &trans              &trans   &trans                &trans
+  &trans        &hm LEFT_META Z   &trans   &trans              &trans   &trans   &trans                &trans   &trans   &trans   &trans              &trans   &hm RIGHT_META FSLH   &trans
+  &trans        &trans            &trans   &mo LAYER_MACMOVE   &trans                                                    &trans   &mo LAYER_MACMOVE   &trans   &trans                &trans
+                                                                        &trans   &macro_to_linux       &trans   &trans                                                                     
+                                                               &trans   &trans   &trans                &trans   &trans   &trans                                                            
+                                                                                 &trans                &trans                                                                              
 			>;
 		};
 		layer_2 {
