@@ -330,6 +330,18 @@
 			bindings = <&macro_num_hold RPAR>, <&partial_hold_position 74 &mo LAYER_NUMBERS>;
 		};
 
+		combo_lparen2 {
+			timeout-ms = <50>;
+			key-positions = <24 69>;
+			bindings = <&macro_num_hold LPAR>, <&partial_hold_position 69 &mo LAYER_NUMBERS>;
+		};
+
+		combo_rparen2 {
+			timeout-ms = <50>;
+			key-positions = <25 69>;
+			bindings = <&macro_num_hold RPAR>, <&partial_hold_position 69 &mo LAYER_NUMBERS>;
+		};
+
 		combo_lbracket {
 			timeout-ms = <50>;
 			key-positions = <36 69>;
