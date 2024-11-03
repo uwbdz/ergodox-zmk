@@ -676,34 +676,34 @@
 		};
 		layer_3 {
 			bindings = <
-//    ┌──────┐                                                                                                                           
-//    │ boot │                                                                                                                           
-//    ├──────┼───────────┬──────────────┬───────────┬─────────┬─────┬─────┐   ┌─────┬─────┬──────┬────────────┬────────────┬──────┬─────┐
-//    │      │           │              │           │         │     │     │   │     │     │      │            │            │      │     │
-//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┼─────┤   ├─────┼─────┼──────┼────────────┼────────────┼──────┼─────┤
-//    │ lgui │   mute    │     vold     │   volu    │ lgui(L) │     │     │   │     │     │ home │ lctl(left) │ lctl(rght) │ end  │     │
-//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┼─────┘   └─────┼─────┼──────┼────────────┼────────────┼──────┼─────┤
-//    │      │ lctl(tab) │ lalt(GraltV) │ lgui(tab) │         │     │               │     │ left │    down    │     up     │ rght │     │
-//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┼─────┐   ┌─────┼─────┼──────┼────────────┼────────────┼──────┼─────┤
-//    │      │ C_AC_BACK │ C_AC_FORWARD │   play    │         │     │     │   │     │     │      │            │            │      │     │
-//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┴─────┘   └─────┴─────┼──────┼────────────┼────────────┼──────┼─────┤
-//    │      │           │              │           │         │                           │      │            │            │      │     │
-//    └──────┴───────────┴──────────────┴───────────┴─────────┼─────┬─────┐   ┌─────┬─────┼──────┴────────────┴────────────┴──────┴─────┘
-//                                                            │     │     │   │     │     │                                              
-//                                                  ┌─────────┼─────┼─────┤   ├─────┼─────┼──────┐                                       
-//                                                  │         │     │     │   │     │     │      │                                       
-//                                                  └─────────┴─────┼─────┤   ├─────┼─────┴──────┘                                       
-//                                                                  │     │   │     │                                                    
-//                                                                  └─────┘   └─────┘                                                    
-  &bootloader                                                                                                                                                                                          
-  &trans          &trans          &trans              &trans             &trans      &trans   &trans       &trans   &trans   &trans           &trans           &trans          &trans            &trans
-  &kp LEFT_META   &kp C_MUTE      &kp C_VOLUME_DOWN   &kp C_VOLUME_UP    &kp LG(L)   &trans   &trans       &trans   &trans   &kp HOME         &kp LC(LEFT)     &kp LC(RIGHT)   &kp END           &trans
-  &trans          &kp LC(TAB)     &kp LA(GRAV)        &kp LG(TAB)        &trans      &trans                         &trans   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW   &trans
-  &trans          &kp C_AC_BACK   &kp C_AC_FORWARD    &kp C_PLAY_PAUSE   &trans      &trans   &trans       &trans   &trans   &trans           &trans           &trans          &trans            &trans
-  &trans          &trans          &trans              &trans             &trans                                              &trans           &trans           &trans          &trans            &trans
-                                                                                     &trans   &trans       &trans   &trans                                                                             
-                                                                         &trans      &trans   &trans       &trans   &trans   &trans                                                                    
-                                                                                              &trans       &trans                                                                                      
+//    ┌──────┐                                                                                                                                       
+//    │ boot │                                                                                                                                       
+//    ├──────┼───────────┬──────────────┬───────────┬─────────┬─────┬─────┐   ┌─────┬────────┬──────┬────────────┬────────────┬──────────┬──────────┐
+//    │      │           │              │           │         │     │     │   │     │        │      │            │            │          │          │
+//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┼─────┤   ├─────┼────────┼──────┼────────────┼────────────┼──────────┼──────────┤
+//    │ lgui │   mute    │     vold     │   volu    │ lgui(L) │     │     │   │     │        │ home │ lctl(left) │ lctl(rght) │   end    │          │
+//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┼─────┘   └─────┼────────┼──────┼────────────┼────────────┼──────────┼──────────┤
+//    │      │ lctl(tab) │ lalt(GraltV) │ lgui(tab) │         │     │               │        │ left │    down    │     up     │   rght   │          │
+//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┼─────┐   ┌─────┼────────┼──────┼────────────┼────────────┼──────────┼──────────┤
+//    │      │ C_AC_BACK │ C_AC_FORWARD │   play    │         │     │     │   │     │ bt_clr │      │  bt_sel 0  │  bt_sel 1  │ bt_sel 2 │ bt_sel 3 │
+//    ├──────┼───────────┼──────────────┼───────────┼─────────┼─────┴─────┘   └─────┴────────┼──────┼────────────┼────────────┼──────────┼──────────┤
+//    │      │           │              │           │         │                              │      │            │            │          │          │
+//    └──────┴───────────┴──────────────┴───────────┴─────────┼─────┬─────┐   ┌─────┬────────┼──────┴────────────┴────────────┴──────────┴──────────┘
+//                                                            │     │     │   │     │        │                                                       
+//                                                  ┌─────────┼─────┼─────┤   ├─────┼────────┼──────┐                                                
+//                                                  │         │     │     │   │     │        │      │                                                
+//                                                  └─────────┴─────┼─────┤   ├─────┼────────┴──────┘                                                
+//                                                                  │     │   │     │                                                                
+//                                                                  └─────┘   └─────┘                                                                
+  &bootloader                                                                                                                                                                                                    
+  &trans          &trans          &trans              &trans             &trans      &trans   &trans       &trans   &trans       &trans           &trans           &trans          &trans            &trans      
+  &kp LEFT_META   &kp C_MUTE      &kp C_VOLUME_DOWN   &kp C_VOLUME_UP    &kp LG(L)   &trans   &trans       &trans   &trans       &kp HOME         &kp LC(LEFT)     &kp LC(RIGHT)   &kp END           &trans      
+  &trans          &kp LC(TAB)     &kp LA(GRAV)        &kp LG(TAB)        &trans      &trans                         &trans       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW   &trans      
+  &trans          &kp C_AC_BACK   &kp C_AC_FORWARD    &kp C_PLAY_PAUSE   &trans      &trans   &trans       &trans   &bt BT_CLR   &trans           &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3
+  &trans          &trans          &trans              &trans             &trans                                                  &trans           &trans           &trans          &trans            &trans      
+                                                                                     &trans   &trans       &trans   &trans                                                                                       
+                                                                         &trans      &trans   &trans       &trans   &trans       &trans                                                                          
+                                                                                              &trans       &trans                                                                                                
 			>;
 		};
 		layer_4 {
