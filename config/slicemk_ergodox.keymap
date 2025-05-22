@@ -221,7 +221,7 @@
 			key-positions = <27 29>;
 			bindings = <&macro_left_shift_hold P>, <&partial_hold_position 29>;
 		};
-		// I use the left shift withe the partial_hold_position since the right shift will trigger an apostrophe.
+		// I use the left shift with the partial_hold_position since the right shift will trigger an apostrophe.
 		combo_A {
 			timeout-ms = <50>;
 			key-positions = <30 40>;
@@ -246,6 +246,11 @@
 			timeout-ms = <50>;
 			key-positions = <40 34>;
 			bindings = <&macro_left_shift_hold G>;
+		};
+		combo_Enter {
+			timeout-ms = <50>;
+			key-positions = <40 69>;
+			bindings = <&macro_left_shift_hold ENTER>;
 		};
 		combo_colon {
 			timeout-ms = <50>;
