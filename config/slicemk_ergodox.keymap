@@ -824,7 +824,7 @@
         layer_0 {
             bindings = <
 &bootloader
-&kp GRAVE       &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3    &none                    &none      &none            &none  &none         &none                            &none           &none         &none                  &none
+&kp GRAVE       &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4             &none      &none            &none  &none         &none                            &none           &none         &none                  &none
 &kp TAB         &kp Q               &kp W         &kp E           &kp R                    &kp T      &none            &none  &kp Y         &kp U                            &kp I           &kp O         &kp P                  &kp MINUS
 &kp CAPSLOCK    &kp A               &kp S         &kp D           &kp F                    &kp G                              &kp H         &kp J                            &kp K           &kp L         &kp SEMICOLON          &om RIGHT_SHIFT APOSTROPHE
 &kp LEFT_SHIFT  &hm LEFT_CONTROL Z  &hm LALT X    &kp C           &kp V                    &kp B      &none            &none  &kp N         &kp M                            &kp CMMA        &hm RALT DOT  &hm LEFT_CONTROL FSLH  &caps_tap RIGHT_GUI DUMMY
